@@ -29,5 +29,6 @@ A quick example of creating a docker machine from your local computer into a dig
     #docker1 shortcuts
     alias actdocker1='eval $(docker-machine env docker1) && echo "docker1 Activated!"'
     alias sshdocker1='docker-machine ssh docker1  && echo "You DID ssh into docker1 successfully!"'
-    alias lsidocker1='docker-machine ssh docker1 docker ps'
+    alias lscdocker1='docker-machine ssh docker1 docker ps'
+    alias lsidocker1='docker-machine ssh docker1 docker images'
 
