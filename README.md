@@ -1,6 +1,6 @@
 # docker-machine-to-digital-ocean
 
-# A quick example of creating a docker machine from your local computer into a digital ocean droplet.
+A quick example of creating a docker machine from your local computer into a digital ocean droplet.
 
 
     #Create a new droplet, install Docker, set the machine to active, set up the shell on the newly created machine.
