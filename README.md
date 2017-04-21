@@ -5,7 +5,7 @@
 
 # Create a new droplet and install Docker
   #Replace "[ACCESS TOKEN HERE]" (everything between the quotes) with your real digital ocean access token.
-  docker-machine create --driver digitalocean --digitalocean-access-token [ACCESS TOKEN HERE] docker-nginx
+  docker-machine create --driver digitalocean --digitalocean-image ubuntu-16-04-x64 --digitalocean-access-token [ACCESS TOKEN HERE] [container-name] && docker-machine env [container-name] && eval $(docker-machine env [container-name])
 
 
 
