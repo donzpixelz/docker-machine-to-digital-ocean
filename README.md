@@ -4,21 +4,37 @@
 
 
 # Create a new droplet and install Docker
-Replace "[ACCESS TOKEN HERE]" (everything between the quotes) with your real digital ocean access token.
-
-docker-machine create --driver digitalocean --digitalocean-access-token [ACCESS TOKEN HERE] docker-nginx
+  #Replace "[ACCESS TOKEN HERE]" (everything between the quotes) with your real digital ocean access token.
+  docker-machine create --driver digitalocean --digitalocean-access-token [ACCESS TOKEN HERE] docker-nginx
 
 
 
 # Set the new machine to active
-docker-machine env docker-nginx
+  docker-machine env docker-nginx
 
 
 
 # Set up the shell on the new machine
-eval $(docker-machine env docker-nginx)
+  eval $(docker-machine env docker-nginx)
 
 
 
 # Installs Ngnix into the machine as a container
-docker run -d -p 8000:80 --name webserver kitematic/hello-world-nginx
+  docker run -d -p 8000:80 --name webserver kitematic/hello-world-nginx
+
+
+
+# .bash_profile shortcuts
+  #shortcut to edit .bash_profile and also source it
+    alias snbp='sudo nano /.bash_profile'
+    alias sbp='source /.bash_profile'
+
+  #docker-machine shortcuts
+    alias dmls='docker-machine ls'
+
+
+  #docker1 shortcuts
+    alias actdocker1='eval $(docker-machine env docker1) && echo "docker1 Activated!"'
+    alias sshdocker1='docker-machine ssh docker1  && echo "You DID ssh into docker1 successfully!"'
+    alias lsidocker1='docker-machine ssh docker1 docker ps'
+
