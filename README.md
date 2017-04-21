@@ -9,9 +9,10 @@
 
 
 
-# Installs Ngnix into the machine as a container
-
-  docker run -d -p 8000:80 --name webserver kitematic/hello-world-nginx
+# Container Installs
+  
+    #nginx
+    docker run -d -p 8000:80 --name webserver kitematic/hello-world-nginx
 
 
 
