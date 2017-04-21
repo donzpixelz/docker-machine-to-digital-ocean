@@ -3,7 +3,7 @@ Just a quick example of creating a docker machine from your local computer into 
 
 
 #Create a new droplet and install Docker
-docker-machine create --driver digitalocean --digitalocean-access-token 6713c7d6b276eff370fa688d8d527ae69006bdd826a387da3f5b694b031cfe96 docker-nginx
+docker-machine create --driver digitalocean --digitalocean-access-token [ACCESS TOKEN HERE] docker-nginx
 
 #Set the new machine to active
 docker-machine env docker-nginx
