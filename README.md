@@ -4,21 +4,25 @@
 
 
 # Create a new droplet and install Docker
+
   docker-machine create --driver digitalocean --digitalocean-image ubuntu-16-04-x64 --digitalocean-access-token [ACCESS TOKEN HERE] [container-name] && docker-machine env [container-name] && eval $(docker-machine env [container-name])
 
 
 
 # Set the new machine to active
+
   docker-machine env docker-nginx
 
 
 
 # Set up the shell on the new machine
+
   eval $(docker-machine env docker-nginx)
 
 
 
 # Installs Ngnix into the machine as a container
+
   docker run -d -p 8000:80 --name webserver kitematic/hello-world-nginx
 
 
