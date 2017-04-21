@@ -18,19 +18,16 @@
 
 # .bash_profile shortcuts
   
-  #shortcut to edit .bash_profile and also source it
-  
+    #shortcut to edit .bash_profile and also source it
     alias snbp='sudo nano /.bash_profile'
     alias sbp='source /.bash_profile'
     
 
-  #docker-machine shortcuts
-  
+    #docker-machine shortcuts
     alias dmls='docker-machine ls'
 
 
-  #docker1 shortcuts
-  
+    #docker1 shortcuts
     alias actdocker1='eval $(docker-machine env docker1) && echo "docker1 Activated!"'
     alias sshdocker1='docker-machine ssh docker1  && echo "You DID ssh into docker1 successfully!"'
     alias lsidocker1='docker-machine ssh docker1 docker ps'
