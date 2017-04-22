@@ -11,7 +11,8 @@ A quick example of creating a docker machine from your local terminal into a dig
 # Container Installs
   
     #nginx
-    docker run -d -p 8000:80 --name webserver kitematic/hello-world-nginx
+    docker run -d -p 8000:80 --name webserver1 kitematic/hello-world-nginx
+    docker run -d -p 8001:80 --name webserver2 kitematic/hello-world-nginx
 
 
 
